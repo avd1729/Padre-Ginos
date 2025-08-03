@@ -14,7 +14,7 @@ const App = () => {
       // Child element: another React element
       "h1", // The HTML element to create: <h1>
       {}, // Props for the <h1> (none used)
-      "Padre Gino's" // Content/text inside <h1>
+      "Padre Gino's", // Content/text inside <h1>
     ),
     React.createElement(Pizza, {
       name: "The Pepperoni Pizza",
@@ -27,7 +27,7 @@ const App = () => {
     React.createElement(Pizza, {
       name: "The Big Meat Pizza",
       description: "Bacon, Pepperoni, Italian Sausage, Chorizo Sausage",
-    })
+    }),
   );
 };
 
