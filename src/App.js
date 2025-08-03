@@ -21,11 +21,15 @@ const App = () => {
         ),
         React.createElement(Pizza, {
             name: "The Pepperoni Pizza",
-            description: "Dope!!"
+            description: "Mozzarella Cheese, Pepperoni",
         }),
         React.createElement(Pizza, {
-            name: "The Margheritta Pizza",
-            description: "Kind of dope!!"
+            name: "The Hawaiian Pizza",
+            description: "Sliced Ham, Pineapple, Mozzarella Cheese",
+        }),
+        React.createElement(Pizza, {
+            name: "The Big Meat Pizza",
+            description: "Bacon, Pepperoni, Italian Sausage, Chorizo Sausage",
         }),
     )
 }
