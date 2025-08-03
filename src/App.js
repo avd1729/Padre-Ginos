@@ -1,3 +1,14 @@
+const Pizza = (props) => {
+    return React.createElement(
+        "div",
+        {},
+        [
+            React.createElement("h2", {}, props.name),
+            React.createElement("p", {}, props.description)
+        ]
+    )
+}
+
 // Define a functional component named 'App'
 const App = () => {
     return React.createElement(
@@ -7,7 +18,15 @@ const App = () => {
             "h1",               // The HTML element to create: <h1>
             {},                 // Props for the <h1> (none used)
             "Padre Gino's"      // Content/text inside <h1>
-        )
+        ),
+        React.createElement(Pizza, {
+            name: "The Pepperoni Pizza",
+            description: "Dope!!"
+        }),
+        React.createElement(Pizza, {
+            name: "The Margheritta Pizza",
+            description: "Kind of dope!!"
+        }),
     )
 }
 
