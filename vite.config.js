@@ -10,4 +10,17 @@ export default defineConfig({
     plugins: [
         react(), // Enables React support including JSX/TSX and Fast Refresh
     ],
+
+    server: {
+        proxy: {
+            "/api": {
+                target: "http://localhost:3000",
+                changeOrigin: true
+            },
+            "/public": {
+                target: "http://localhost:3000",
+                changeOrigin: true
+            }
+        }
+    }
 });
