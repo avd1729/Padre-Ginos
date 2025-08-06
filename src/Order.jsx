@@ -93,7 +93,7 @@ export default function Order() {
           <button type="submit">Add to Cart</button>
           <div className="order-pizza">
             {
-              loading ? <h2>Loading...</h2> : (
+              loading ? <h3>Loading...</h3> : (
                 <Pizza
                   name={selectedPizza.name}
                   description={selectedPizza.description}
