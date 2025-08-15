@@ -9,6 +9,8 @@ import prettier from "eslint-config-prettier"
 
 import reactPlugin from "eslint-plugin-react"
 
+import pluginQuery from '@tanstack/eslint-plugin-query'
+
 // Exporting an array of ESLint config objects (flat config format)
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -25,6 +27,7 @@ export default [
     },
 
     reactPlugin.configs.flat["jsx-runtime"],
+    ...pluginQuery.configs['flat/recommended'],
 
     // Custom configuration applied to JS/TS/JSX/TSX files
     {
