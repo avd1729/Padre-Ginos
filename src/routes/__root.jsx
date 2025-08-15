@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createRootRoute } from "@tanstack/react-router";
+import { createRootRoute, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import PizzaOfTheDay from "../PizzaOfTheDay";
 import Header from "../Header";
@@ -13,7 +13,7 @@ export const Route = createRootRoute({
                 <CartContext.Provider value={cartHook}>
                     <div>
                         <Header />
-                        {/* <Outlet /> */}
+                        <Outlet/>
                         <PizzaOfTheDay />
                     </div>
                 </CartContext.Provider>
