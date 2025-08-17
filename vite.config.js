@@ -24,5 +24,10 @@ export default defineConfig({
                 changeOrigin: true
             }
         }
-    }
+    },
+
+    test: {
+        environment: "happy-dom",
+    },
 });
+
